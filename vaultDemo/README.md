@@ -19,3 +19,8 @@ vault kv put secret/vaultDemo/cloud demo.username=clouduser demo.password=cloudp
 
 
 
+## What Happens 
+
+>Spring Cloud Vault uses VaultOperations to interact with Vault. Properties from Vault get mapped to VaultConfiguration for type-safe access. @EnableConfigurationProperties(VaultConfiguration.class) enables configuration property mapping and registers a VaultConfiguration bean.
+
+>Application includes a main() method that autowires an instance of VaultConfiguration
